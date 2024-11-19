@@ -13,14 +13,17 @@ This application manages the admissions flow for users, including steps and task
 2. Install the required packages:
     
 ```Shell
-    pip install -r requirements.txt
+  pip install -r requirements.txt
  ```
 3. Run the application:
     
 ``` Shell
-    flask run
+  flask run
  ```   
- 
+4. to run the tests:
+```shell
+  pytest test_app.py
+```
 ## Endpoints
  
 ### Create User
@@ -280,3 +283,6 @@ Below is an explanation of the requirements to complete each step in the admissi
 * Required Fields:
   * email 
   * timestamp
+
+## Logging
+All logs, including application, test, and error messages, are captured in app.log and displayed in the console by default. The log level is set to INFO, providing detailed insights into the application's operation, test execution, and any error messages that occur.
